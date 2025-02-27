@@ -1,0 +1,162 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+.container {
+  background: white;
+  padding: 20px;
+  width: 600px;
+  text-align: center;
+}
+.profile-pic {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+.profile-pic img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.add-photo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+#btn{
+  width: 100px;
+  height: 35px;
+  border-radius: 60px;
+  background-color: #e3e3e3;
+  color: #b5b5b5;
+  font-weight: 700;
+
+}
+
+.add-libelle{
+  background: white;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #696C6A;
+  width: 85px;
+  cursor: pointer;
+}
+.bi{
+  color: #0b6eb4;
+  font-style: bold;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  text-align: left;
+  margin-top: 10px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #9c9e9c;
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(21, 7, 7);
+    padding: 20px 45px 20px 20px;
+  }
+select,
+button {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.add-email{
+    border: none;
+    border-radius: 25px;
+    background-color: #EEF2F7;
+    color: #0b6eb4;
+    font-weight: 700;
+    height: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.phone-input {
+  display: flex;
+  gap: 10px;
+  
+}
+.country-code {
+  width: 100px;
+  border: 2px solid #9c9e9c;
+  border-radius: 5px;
+}
+button[type="submit"] {
+  background: rgb(7, 7, 236);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+button[type="submit"]:hover {
+  background: darkblue;
+}
+
+
+.table-header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.column{
+  flex-grow: 1;
+  color: rgb(110, 110, 110);
+}
+
+
+/* Align icons properly outside the inputs */
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and input */
+  margin-bottom: 10px; /* Spacing between input rows */
+}
+
+/* Icon Styling */
+.icon-container {
+  width: 40px; /* Fixed width to align icons */
+  height: 40px; /* Matches input height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem; /* Adjust icon size */
+  color: #6c757d; /* Default Bootstrap gray */
+}
+
+/* Ensures all inputs match the icon height */
+.form-control, .form-select {
+  height: 40px; /* Matches icon-container height */
+}
+
+/* Dropdown for country selection */
+.phone-select {
+  max-width: 80px;
+}
