@@ -98,14 +98,32 @@
           </div>
         </div>
       </section>
+
+
+      <!..return button..>
       <section id="main-section" class="w-90 main-section md-w-100">
         <a id="return-btn" href="index.html">
           <i class="bi bi-arrow-left"></i>
         </a>
+
+        
         <div class="profile-pic">
-          <img src="assets/images/logo.png" alt="Profile Picture">
+          <!..profile picture..>
+        <div class="avatar-container">
+          <div class="avatar" id="avatar">
+              <img id="avatarImage" alt="Avatar">
+              <img src="https://static.vecteezy.com/system/resources/previews/024/189/848/non_2x/contact-avatar-icon-free-png.png" class="avatar-placeholder">
+          </div>
+          <label class="upload-button">
+              <span>+</span>
+              <input type="file" id="fileInput" accept="image/*">
+          </label>
+      </div>
+
           <button type="submit" id="btn">Enregistrer</button>
       </div>
+
+      <!..button libele..>
       <div class="libelle-input">
         <button class="add-libelle" type="button" id="add-libelle">
           <i class="bi bi-plus-lg"></i> Libellé
@@ -116,45 +134,49 @@
             <div class="container">
               <!-- Prénom -->
               <div class="input-container">
-                  <div class="icon-container"><i class="bi bi-person"></i></div>
+                  <div class="icon-container"><i class="bi bi-person icons"></i></div>
                   <input type="text" class="form-control" placeholder="Prénom">
               </div>
       
               <!-- Nom -->
               <div class="input-container">
-                  <div class="icon-container"><i class="bi bi-person"></i></div>
+                  <div class="icon-container"><i class="bi bi-person2"></i></div>
                   <input type="text" class="form-control" placeholder="Nom">
               </div>
       
               <!-- Entreprise -->
               <div class="input-container">
-                  <div class="icon-container"><i class="bi bi-building"></i></div>
+                  <div class="icon-container"><i class="bi bi-building icons"></i></div>
                   <input type="text" class="form-control" placeholder="Entreprise">
               </div>
       
               <!-- Fonction -->
               <div class="input-container">
-                  <div class="icon-container"><i class="bi bi-briefcase"></i></div>
+                  <div class="icon-container"><i class="bi bi-briefcase2"></i></div>
                   <input type="text" class="form-control" placeholder="Fonction">
               </div>
       
               <!-- E-mail -->
               <div class="input-container">
-                  <div class="icon-container"><i class="bi bi-envelope"></i></div>
+                  <div class="icon-container"><i class="bi bi-envelope icons"></i></div>
                   <input type="email" class="form-control" placeholder="E-mail">
               </div>
       
               <!-- Add Email Link -->
-              <div class="d-flex justify-content-start mb-2">
-                  <button class="btn btn-light text-primary">
-                      <i class="bi bi-plus"></i> Ajouter une adresse e-mail
-                  </button>
+              <div class="input-container">
+                <div class="icon-container"><i class="bi bi-envelope2"></i></div>
+                <button class="add-email" type="button" id="add-email">
+                  + Ajouter une adresse e-mail
+                </button>
+            </div>
+              <div>
+                
               </div>
       
               <!-- Téléphone -->
               <div class="input-container">
                   <div class="icon-container"><i class="bi bi-telephone"></i></div>
-                  <select class="form-select phone-select">
+                  <select class="form-select phone-select country-code">
                     <option value="+243">🇨🇩 </option>
                     <option value="+33">🇫🇷</option>
                     <option value="+1">🇺🇸</option>

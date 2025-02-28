@@ -48,3 +48,21 @@ function addContact(contact) {
   // Implémentez la logique pour ajouter le contact à la liste
   console.log('Contact ajouté:', contact);
 }*/
+
+const fileInput = document.getElementById('fileInput');
+const avatarImage = document.getElementById('avatarImage');
+const placeholder = document.querySelector('.avatar-placeholder');
+
+fileInput.addEventListener('change', function(event) {
+    const file = event.target.files[0];
+
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            avatarImage.src = e.target.result;
+            avatarImage.style.display = "block";
+            placeholder.style.display = "none";
+        };
+        reader.readAsDataURL(file);
+    }
+});
