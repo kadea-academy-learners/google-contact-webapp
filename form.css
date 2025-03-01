@@ -130,14 +130,14 @@ button {
     margin-top: 15px;
     margin-bottom: 15px;
     cursor: pointer;
-}
+/* }
 button[type="submit"] {
   background: rgb(7, 7, 236);
   color: white;
   border: none;
   cursor: pointer;
   margin-top: 15px;
-}
+} */
 
 
 
