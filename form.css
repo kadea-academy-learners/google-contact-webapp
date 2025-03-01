@@ -5,18 +5,13 @@
   width: 600px;
   text-align: center;
 }
-.profile-pic {
+.profile-container {
   position: relative;
   display: flex;
   justify-content: space-between;
   width: 600px;
   margin-bottom: 80px;
   margin-top: 50px;
-}
-.profile-pic img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
 }
 
 
