@@ -120,6 +120,7 @@ button {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+/* Add email-btn styling */
 .add-email{
     border: none;
     border-radius: 25px;
