@@ -98,7 +98,7 @@ input[type="file"] {
   font-style: bold;
   font-size: 18px;
 }
-
+/* Formular styling */
 form {
   display: flex;
   flex-direction: column;
